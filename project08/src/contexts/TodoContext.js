@@ -9,10 +9,13 @@ export const TodoContext=createContext({// creating array here
  addTodo:(todo)=>{},//for add todo
  updateTodo:(id,todo)=>{},//for update todo
  deleteTodo:(id)=>{},//for delete todo
- toggleTodo:(id)=>{}//toggle todo
+ toggleComplete:(id)=>{}//toggle todo
 })
 export const useTodo=()=>{
     return useContext(TodoContext)//need to give a context
 }
-export const Todoprovider=TodoContext.Provider //storing it in a variable that's why don't need to
+export const TodoProvider=TodoContext.Provider //storing it in a variable that's why don't need to
 //  declare it again and again 
+
+  
+
